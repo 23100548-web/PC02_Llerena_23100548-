@@ -107,7 +107,7 @@ fun LoginScreen(navController: NavController) {
                                     popUpTo("login") { inclusive = true }
                                 }
                             } else {
-                                errorMessage = "Error: " + (result.exceptionOrNull()?.localizedMessage ?: "Credenciales inválidas")
+                                errorMessage = "Error de credenciales"
                             }
                         }
                     },
