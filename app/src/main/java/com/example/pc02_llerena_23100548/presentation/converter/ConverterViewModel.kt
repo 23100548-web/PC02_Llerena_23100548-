@@ -50,7 +50,7 @@ class ConverterViewModel : ViewModel() {
                 val response = RetrofitInstance.api.getLatestRates("EUR")
                 val apiRates = response.rates.toMutableMap()
                 
-                // Add EUR (base) and PEN (manually, not supported by Frankfurter API)
+                // euro ni soles soporta frakfurter
                 apiRates["EUR"] = 1.0
                 apiRates["PEN"] = 4.05 // 1 EUR = 4.05 PEN approx
                 
